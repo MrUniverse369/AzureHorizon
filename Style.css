@@ -22,36 +22,40 @@
 }
 
 
-
-
-.WebTitle>.titleRow>h1{    font-size: 1400%
+.ThePress{
+    padding-top: 200px;
+    padding-bottom: 250px;
+}
+.ThePress>h2{
+    padding-bottom: 100px;
+}
+.ThePress>div>div>p, .ThePress>div>div>h2{
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
-.WebTitle>.titleRow>h2{    font-size: 600%
-}
-.WebTitle>.titleRow>h3{    font-size: 400%
-}
-
-.WebTitle>h2{
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 350px;
-    padding-right: 250px;
-    font-family: 'Mada', sans-serif;
-    font-family: 'Petrona', serif;
-    color: white;
-}
-.Intro , .ContactUs{
-    background-color: #623E2A;
-    align-items: center;
+.ThePress>div>div>h2{
+  padding-top: 10px;
 }
 
+.ThePress,.LuxuryGetaway{
+    color: #623E2A;
+    background-color: white;
+}
 .Accomodation{
     background-color: #EFEBE5;
     color: #623E2A;
 }
+
+.ContactUs>div{
+
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
     
-#NavList>li>ul{
+#NavList>li>ul,.ContactUs{
     background-color: #623E2A;
     color: white;
 }
@@ -64,3 +68,14 @@
     font-family: 'Mada', sans-serif;
 font-family: 'Petrona', serif;
 }
+
+.socialMediaIcons{
+   
+}
+
+#NavList>li>ul>li>a,#NavList>li>a,.ThePress,.LuxuryGetaway,.Accomodation,.ContactUs{
+
+    font-family: 'Mada', sans-serif;
+font-family: 'Petrona', serif;
+}
+
