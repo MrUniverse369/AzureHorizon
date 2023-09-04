@@ -73,6 +73,10 @@ font-family: 'Petrona', serif;
    
 }
 
+.ContactUsBox{
+    width: 100%;
+    height: 100%;
+}
 #NavList>li>ul>li>a,#NavList>li>a,.ThePress,.LuxuryGetaway,.Accomodation,.ContactUs{
 
     font-family: 'Mada', sans-serif;
