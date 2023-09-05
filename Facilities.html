@@ -4,6 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mada:wght@500&family=Petrona:ital,wght@0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
     <title>Facilities</title>
   </head>
   <body>
@@ -28,7 +48,7 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
+                href="index.html"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -36,6 +56,9 @@
                 Explore Azure
               </a>
               <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="index.html">Home</a>
+                </li>
                 <li>
                   <a class="dropdown-item" href="Rooms.html">Rooms</a>
                 </li>
@@ -56,10 +79,10 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="Jamaica.html"> Jamaica</a>
+                  <a class="dropdown-item" href="Gatherings.html">Gatherings</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="Thailand.html">Thailand</a>
+                  <a class="dropdown-item" href="Culinary.html">Culinary</a>
                 </li>
               </ul>
             </li>
@@ -91,6 +114,141 @@
       </div>
     </nav>
 
-    <h1>Facilities</h1>
+    <!--Spa Specific activities -->
+    <div class="container-fluid FacilitiesRow">
+      <div class="row text-center FacilitiesSpaRow">
+        <h1 class="text-center p-5 display-1">Limitless relaxation</h1>
+
+        <div class="col-3"></div>
+        <div class="col-6">
+          <div class="row row-cols-1 row-cols-md-2 g-4 FacilitiesRow">
+            <div class="col">
+              <div class="card">
+                <img src="Images/Messages.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Massages</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla sit nihil consectetur id sunt temporibus corrupti
+                    aperiam architecto exercitationem inventore!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="Images/Sauna.jpg"
+                  class="card-img-top"
+                  alt="luxury brown wood sauna"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sauna</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Corrupti omnis quod voluptatum molestiae dolor incidunt
+                    dolore aliquid impedit similique non.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="Images/Yoga.jpg"
+                  class="card-img-top"
+                  alt="luxury brown wood sauna"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Yoga and Meditation</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit eveniet porro nihil hic quam consequatur distinctio
+                    eos vel molestiae quidem.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="Images/Pool.jpg"
+                  class="card-img-top"
+                  alt="luxury ocean pool side"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Ocean View Pool</h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Cum adipisci assumenda molestias repellat ducimus! Saepe
+                    minima laborum non aut ratione?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+
+      <!--Food specific -->
+    </div>
+
+    <div class="container-fluid ContactUs pt-5 pb-5">
+      <h2 class="text-center display-3 pt-5 pb-5">Get In Touch</h2>
+      <div class="row">
+        <div class="col-4">
+          <div class="border border-3 border-white rounded p-5 ContactUsBox">
+            <h2>Reservations Office</h2>
+            <p>
+              <i class="fa-sharp fa-solid fa-location-dot fa-beat fa-lg"></i>
+              &nbsp &nbsp 123 Anywhere St., Any City ST 12345
+            </p>
+            <p>
+              <i class="fa-solid fa-mobile-screen-button fa-beat fa-lg"></i>
+              &nbsp; &nbsp; 1123-456-7890
+            </p>
+            <p>
+              <i class="fa-sharp fa-solid fa-envelope fa-beat fa-lg"></i>&nbsp;
+              &nbsp; hello@reallygreatsite.com
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="border border-3 border-white rounded p-5 ContactUsBox">
+            <h2>Office Hours</h2>
+            <p class="lead pb-4 pt-5">
+              Monday - Friday <br />
+              09:00 - 18:00 <br />
+              <br />
+              Saturday <br />
+              10:00 - 16:00
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="border border-3-lg border-white rounded p-5 ContactUsBox">
+            <h2>Get Social</h2>
+
+            <div class="pt-5 pb-5">
+              <i class="fa-brands fa-instagram fa-shake fa-2xl pe-3"></i>
+              <i class="fa-brands fa-facebook fa-shake fa-2xl pe-3"></i>
+              <i class="fa-brands fa-x-twitter fa-shake fa-2xl pe-3"></i>
+            </div>
+            <h2
+              class="border border-3 rounded-pill border-white text-center mt-5"
+            >
+              Tag us In your Photos
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
