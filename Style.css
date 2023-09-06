@@ -1,3 +1,9 @@
+*{
+
+font-family: 'Mada', sans-serif;
+font-family: 'Petrona', serif;
+}
+
 .Navholder{
     background-color: #623E2A;
     color: white;
@@ -27,33 +33,21 @@
     gap: 10px;
 }
 
-.ThePress, .FamilySuite{
+ .FamilySuite{
     padding-top: 200px;
     padding-bottom: 250px;
 }
 
-.FamilySuite{
+.FamilySuite, .Accomodation{
     padding-top: 100px;
     padding-bottom: 250px;
 }
 
-.ThePress>h2{
-    padding-bottom: 100px;
-}
-.ThePress>div>div>p, .ThePress>div>div>h2{
-    padding-right: 50px;
-    padding-left: 50px;
-}
-
-.ThePress>div>div>h2{
-  padding-top: 10px;
-}
-
-.ThePress,.LuxuryGetaway, .DeluxeSeaRoom{
+.ThePressFlexContainer , .ThePress, .LuxuryGetaway, .DeluxeSeaRoom , .OnlyForMembersRowTwo{
     color: #623E2A;
     background-color: white;
 }
-.Accomodation, .FamilySuite , .DeluxeRoom, .FacilitiesSpaRow ,.GatheringsRow {
+.Accomodation, .FamilySuite , .DeluxeRoom, .FacilitiesSpaRow ,.GatheringsRow ,.OnlyForMembers{
     background-color: #EFEBE5;
     color: #623E2A;
 }
@@ -88,9 +82,26 @@ font-family: 'Petrona', serif;
     width: 100%;
     height: 100%;
 }
-#NavList>li>ul>li>a,#NavList>li>a,.ThePress,.LuxuryGetaway,.Accomodation,.ContactUs, .FamilySuite, .FacilitiesRow , .GatheringsRow{
 
-font-family: 'Mada', sans-serif;
-font-family: 'Petrona', serif;
+.gs{
+    display: flex;
+    justify-content: center;
 }
 
+.ThePressFlexContainer{
+    display: flex;
+    flex-flow: row;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+.LuxuryGetawayFlexItem3{
+    flex-grow: 3;
+}
+
+@media  (max-width: 500px) {
+    
+.ThePressFlexContainer{
+    display: flex;
+    flex-flow: row wrap;
+}
+}
