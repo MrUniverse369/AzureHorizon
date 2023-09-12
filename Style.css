@@ -21,6 +21,7 @@ font-family: 'Petrona', serif;
     color: white;
     text-align: center;
 }
+
 .navbar-nav .active {
     color: black;
   }
@@ -73,9 +74,6 @@ font-family: 'Petrona', serif;
 font-family: 'Petrona', serif;
 }
 
-.socialMediaIcons{
-   
-}
 
 
 .ContactUsBoxFlexItem{
@@ -88,18 +86,21 @@ font-family: 'Petrona', serif;
     display: flex;
     justify-content: center;
 }
+
 .FooterFlexContainer{
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .ThePressFlexContainer{
     display: flex;
     flex-flow: row;
     padding-top: 250px;
     padding-bottom: 250px;
 }
+
 .LuxuryGetawayFlexItem3{
     flex-grow: 3;
 }
@@ -115,4 +116,10 @@ font-family: 'Petrona', serif;
     display: flex;
     flex-flow: row wrap;
 }
+}
+
+.card-body{
+    color:  #EFEBE5;
+    background-color: #623E2A;
+    
 }
