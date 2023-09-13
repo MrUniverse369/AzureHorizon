@@ -6,33 +6,22 @@ font-family: 'Petrona', serif;
 
 .Navholder{
     background-color: #623E2A;
-    color: white;
 }
 
-.WebTitle{
-    position: absolute;
-    width: 100%;
-    padding-top: 500px;
-    padding-bottom: 500px;
-    padding-left: 200px;
-    padding-right: 0px;
+#NavList>li>ul,.ContactUs , .FooterFlexContainer{
+    background-color: #623E2A;
+    color: white;
+}
+#NavList>li>a{
+    font-size: larger;
+    font-style: bold;
+}
+#NavList>li>ul>li>a,#NavList>li>a{
+    color: white;
     font-family: 'Mada', sans-serif;
-    font-family: 'Petrona', serif;
-    color: white;
-    text-align: center;
+font-family: 'Petrona', serif;
 }
 
-.navbar-nav .active {
-    color: black;
-  }
-
-  .nav-link:hover{
-    color: black !important;
-}
-.cFlex{
-    display: flex;
-    gap: 10px;
-}
 
  .FamilySuite{
     padding-top: 200px;
@@ -48,7 +37,7 @@ font-family: 'Petrona', serif;
     color: #623E2A;
     background-color: white;
 }
-.Accomodation, .FamilySuite , .DeluxeRoom, .FacilitiesSpaRow ,.GatheringsRow ,.OnlyForMembers{
+.Accomodation, .FamilySuite , .DeluxeRoom, .FacilitiesSpaRow ,.GatheringsRow ,.OnlyForMembers , .Gatherings{
     background-color: #EFEBE5;
     color: #623E2A;
 }
@@ -60,19 +49,6 @@ font-family: 'Petrona', serif;
 
 }
     
-#NavList>li>ul,.ContactUs , .FooterFlexContainer{
-    background-color: #623E2A;
-    color: white;
-}
-#NavList>li>a{
-    font-size: larger;
-    font-style: bold;
-}
-#NavList>li>ul>li>a,#NavList>li>a{
-    color: white;
-    font-family: 'Mada', sans-serif;
-font-family: 'Petrona', serif;
-}
 
 
 
