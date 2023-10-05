@@ -37,7 +37,7 @@ font-family: 'Petrona', serif;
     color: #623E2A;
     background-color: white;
 }
-.Accomodation, .FamilySuite , .DeluxeRoom, .FacilitiesSpaRow ,.GatheringsRow ,.OnlyForMembers , .Gatherings , .Culinary{
+.Accomodation, .FamilySuite , .DeluxeRoom, .FacilitiesSpaRow ,.GatheringsRow ,.OnlyForMembers , .Gatherings , .Culinary, .BookingForm{
     background-color: #EFEBE5;
     color: #623E2A;
 }
@@ -105,4 +105,21 @@ font-family: 'Petrona', serif;
     border-radius: 10px;
     border-style: solid;
     border-width: 10px;
+}
+
+.BookingForm, .Form{
+    justify-content: end;
+    align-items: center;
+
+}
+
+label{
+    cursor: pointer;
+}
+
+.formNames{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    
 }

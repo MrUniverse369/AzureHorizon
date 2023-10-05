@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mada:wght@500&family=Petrona:ital,wght@0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>BookingForm</title>
+  </head>
+  <body class="BookingForm">
+    <div class="BookingForm container-fluid">
+      <form id="form">
+        <div class="formNames">
+          <label for="firstname" placeholder="Firstname"
+            >FirstName
+            <input type="text" id="firstname" placeholder="John" required />
+          </label>
+          <label for="lastname" placeholder="Lastname"
+            >LastName
+            <input type="text" id="lastname" placeholder="Doe" required
+          /></label>
+        </div>
+        <br />
+        <br />
+
+        <label for="Address1" placeholder="Address1"
+          >Address1
+          <input
+            type="text"
+            id="Address1"
+            placeholder="Enter Address1"
+            required
+          />
+        </label>
+        <label for="Address2" placeholder="Address2"
+          >Address 2
+          <input
+            type="text"
+            id="Address2"
+            placeholder="Enter Address2"
+            required
+          />
+        </label>
+        <label for="City" placeholder="City"
+          >City
+          <input type="text" id="City" placeholder="City" required />
+        </label>
+
+        <label for="County" placeholder="County"
+          >County
+          <input type="text" id="County" placeholder="County" required />
+        </label>
+        <label for="PostCode" placeholder=""
+          >PostCode
+          <input type="text" id="PostCode" placeholder="PostCode" required />
+        </label>
+        <br />
+        <br />
+        <label for="Phone" placeholder="Phone"
+          >Phone <input type="text" id="Phone" placeholder="Phone" required
+        /></label>
+        <label for="EmailAddress" placeholder="EmailAddress"
+          >Email
+          <input
+            type="text"
+            id="EmailAddress"
+            placeholder="EmailAddress"
+            required
+          />
+        </label>
+        <br />
+        <br />
+        <label for="CheckIn" placeholder="CheckIn">Check In</label>
+        <label for="CheckOut" placeholder="CheckOut">Check Out</label>
+        <br />
+        <input type="date" id="CheckIn" placeholder="CheckIn" required />
+
+        <input type="date" id="CheckOut" placeholder="CheckOut" required />
+        <br />
+        <br />
+        <label for="Deluxe" placeholder="RoomType"> <u> RoomType</u></label
+        ><br />
+        <label for="Deluxe" placeholder="Deluxe">Deluxe</label>
+        <input type="checkbox" id="Deluxe" placeholder="RoomType" />
+
+        <label for="FamilySuiteRoom" placeholder="FamilySuiteRoom"
+          >FamilySuiteRoom</label
+        >
+        <input type="checkbox" id="FamilySuiteRoom" placeholder="RoomType" />
+
+        <label for="DeluxeSeaRoom" placeholder="DeluxeSeaRoom"
+          >DeluxeSeaRoom</label
+        >
+        <input type="checkbox" id="DeluxeSeaRoom" placeholder="RoomType" />
+        <br />
+        <br />
+        <input
+          class="btn btn-dark"
+          type="submit"
+          id="submit"
+          value="Register"
+        />
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
