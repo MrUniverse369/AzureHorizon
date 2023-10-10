@@ -27,8 +27,76 @@
 
     <title>BookingForm</title>
   </head>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 m-0 Navholder">
+    <div class="container-fluid Navholder justify-content-center">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse flex-grow-0 text-white"
+        id="navbarNavDropdown"
+      >
+        <ul class="navbar-nav" id="NavList">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Explore Azure
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Rooms.html">Rooms</a></li>
+              <li>
+                <a class="dropdown-item" href="Facilities.html">Facilities</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Event Hosting
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="Gatherings.html">Gatherings</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="Culinary.html">Culinary</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Offers.html">Offers</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <body class="BookingForm">
-    <div class="BookingForm container-fluid">
+    <div class="BookingForm container-fluid pt-5 pb-5 pe-5">
       <form id="form">
         <div class="formNames">
           <label for="firstname" placeholder="Firstname"
