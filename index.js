@@ -1,4 +1,4 @@
 
-let firstName = document.querySelector("#firstname");
-let userInput = prompt("what is your first name");
+let firstName = document.querySelector("#firstName");
+
 firstName.textContent= userInput;
