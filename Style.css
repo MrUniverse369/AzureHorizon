@@ -33,7 +33,7 @@ font-family: 'Petrona', serif;
     padding-bottom: 250px;
 }
 
-.ThePressFlexContainer , .ThePress, .LuxuryGetaway, .DeluxeSeaRoom , .OnlyForMembersRowTwo{
+.ThePressFlexContainer , .ThePress, .LuxuryGetaway, .DeluxeSeaRoom , .OnlyForMembersRowTwo,.BookingFormMain{
     color: #623E2A;
     background-color: white;
 }

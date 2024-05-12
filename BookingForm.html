@@ -78,20 +78,92 @@
     </div>
   </nav>
 
-  <body class="BookingForm">
-    <div class="BookingForm container-fluid pt-5 pb-5 pe-5">
-      <form id="form">
-        <div class="formNames">
-          <label for="firstname" placeholder="Firstname"
-            >FirstName
-            <input type="text" id="firstName" placeholder="John" required />
-          </label>
-          <label for="lastname" placeholder="Lastname"
-            >LastName
-            <input type="text" id="lastname" placeholder="Doe" required
-          /></label>
+  <body class="BookingFormMain">
+
+    <div class="row ">
+      <div class="col-3"></div>
+      <div class="BookingForm col-6 pt-5 pb-5 pe-5 m-5">
+
+
+        <h1 class="display-1 text-center">Your Details</h1>
+        <h2 class="display-5">Name & Address</h2>
+        <hr>
+        <br>
+        <br>
+        <form action="">
+          <div> 
+            
+            <label for="title">Title</label>
+            <select id="title" name="title">
+              <option value="volvo">Mr</option>
+              <option value="saab">Mrs</option>
+              <option value="fiat">Miss</option>
+              <option value="audi">Dr</option>
+            </select>
+          </div>
+
+          <div>
+          <label for="Fname">First Name </label>
+          <input type="text" id="Fname" />
         </div>
-      </form>
+
+        <div>
+          <label for="Lname">Last Name </label>
+          <input type="text" id="Lname" />
+        </div>
+<!--  Billing address -->
+        <div>
+          <label for="BAddress">Address Line 1 </label>
+          <input type="text" id="BAddress" />
+        </div>
+        
+        <div>
+          <label for="BAddress">Address Line 2 </label>
+          <input type="text" id="BAddress" />
+        </div>
+        <div>
+          <label for="BAddress">Town/City </label>
+          <input type="text" id="BAddress" />
+        </div>
+
+        <div>
+          <label for="BAddress">Post Code  </label>
+          <input type="text" id="BAddress" />
+        </div>
+
+        <div> <label for="Country">Choose Country</label>
+          <select id="Country" name="Country">
+            <option value="volvo">England</option>
+            <option value="saab">USA</option>
+            <option value="fiat">France</option>
+            <option value="audi">Ireland</option>
+          </select>
+        </div>
+
+
+        <hr>
+<br>
+<br>
+        <!--Contact details -->
+        <h2 class="display-5">Contact Details</h2>
+        <div>
+          <label for="Email">Email  </label>
+          <input type="text" id="Email" />
+        </div>
+        <div>
+          <label for="Pnum">Phone Number  </label>
+          <input type="text" id="Pnum"/>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <input type="submit">
+
+    
+
+
+      </div>
+      <div class="col-3"></div>
     </div>
 
     <script src="index.js"></script>
