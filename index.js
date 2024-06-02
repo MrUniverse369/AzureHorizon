@@ -20,8 +20,6 @@ addForm.addEventListener('submit',function(e){
     console.log(pSelect);
     console.log(eMail);
     console.log(pNum);
-    alert("Your "+pSelect+" Package has been booked a confirmation email should be with you shortly");
-    
-});
+    alert("Hey "+fName+" "+lName+" we have received your booking for "+pSelect+" one of our expert resort specialists will be in touch about next steps.\n" );});
     
 
