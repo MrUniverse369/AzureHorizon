@@ -99,41 +99,43 @@
               <option value="audi">Dr</option>
             </select>
           </div>
-
+          <br />
           <div>
             <label for="Fname">First Name </label>
             <input type="text" id="Fname" />
+            <p class="FnameErr">Please enter a valid first name</p>
           </div>
-
+          <br />
           <div>
             <label for="Lname">Last Name </label>
             <input type="text" id="Lname" />
+            <p class="LnameErr">Please enter a valid first name</p>
           </div>
-          <!--  Billing address -->
+          <br />
+          <div>
+            <label for="Email">Email </label>
+            <input type="text" id="Email" />
+            <p class="eMailErr"></p>
+          </div>
+          <br />
           <div>
             <label for="BAddress">Address</label>
-            <input type="text" id="addLine" />
+            <input type="text" id="Badd" />
+            <p class="BAddErr"></p>
           </div>
-
+          <br />
           <div>
             <label for="BAddress">Town/City </label>
             <input type="text" id="townCity" />
+            <p class="TCErr"></p>
           </div>
-
+          <br />
           <div>
             <label for="BAddress">Post Code </label>
             <input type="text" id="pCode" />
+            <p class="PCErr"></p>
           </div>
-
-          <div>
-            <label for="Country">Choose Country</label>
-            <select id="cSelect" name="Country">
-              <option value="England">England</option>
-              <option value="USA">USA</option>
-              <option value="France">France</option>
-              <option value="Ireland">Ireland</option>
-            </select>
-          </div>
+          <br />
           <div>
             <label for="Package">Choose Package</label>
             <select id="pSelect" name="Package">
@@ -142,20 +144,6 @@
               <option value="Family Suite">Family Suite</option>
             </select>
           </div>
-          <hr />
-          <br />
-          <br />
-          <!--Contact details -->
-          <h2 class="display-5">Contact Details</h2>
-          <div>
-            <label for="Email">Email </label>
-            <input type="text" id="Email" />
-          </div>
-          <div>
-            <label for="Pnum">Phone Number </label>
-            <input type="text" id="Pnum" />
-          </div>
-          <hr />
           <br />
           <br />
           <input type="submit" />
