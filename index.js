@@ -16,6 +16,11 @@ const fName = document.getElementById("Fname");
     const tcErr = document.querySelector(".TCErr");
     const pcErr = document.querySelector(".PCErr");
     const eMailErr = document.querySelector(".eMailErr");
+    
+    const bookingR = document.querySelector(".BookingReceived");
+    const bookingRM = document.querySelector(".BookingReceivedM");
+    const bKF = document.querySelector(".BKF");
+    bookingR.style.display = "none";
 
 
     fNameErr.style.display = "none";
@@ -24,7 +29,9 @@ const fName = document.getElementById("Fname");
     tcErr.style.display = "none";
     pcErr.style.display = "none";
     eMailErr.style.display = "none";
-
+let InputIsClean = [];
+let InputIsCleanvar = true;
+let inputNotClean = false;
    
     const hasNumbers = (str) => {
         return /\d/.test(str);
@@ -35,9 +42,12 @@ const fName = document.getElementById("Fname");
             fNameErr.style.display = "block"; 
             fNameErr.style.color = "red";
             fNameErr.innerHTML = "Field can not be empty";
+            InputIsClean.push(false);
+          
            }
            else{
             fNameErr.style.display = "none";
+            InputIsClean.push(true);
          }
 
 
@@ -45,42 +55,54 @@ const fName = document.getElementById("Fname");
             lNameErr.style.display = "block";
             lNameErr.style.color = "red";
             lNameErr.innerHTML = "Field can not be empty";
+            InputIsClean.push(false);
+    
           }
           else{
             lNameErr.style.display = "none";
+            InputIsClean.push(true);
          }
 
           if(Badd.value === '' || Badd.value == null){
             bAddErr.style.display = "block";
             bAddErr.style.color = "red";
             bAddErr.innerHTML = "Field can not be empty";
+            InputIsClean.push(false);
+           
           }
           else{
             bAddErr.style.display = "none";
+            InputIsClean.push(true);
          }
 
           if(townCity.value === '' || townCity.value == null){
           tcErr.style.display = "block";
           tcErr.style.color = "red";
           tcErr.innerHTML = "Field can not be empty";
+          InputIsClean.push(false);
+          
           }
           else{
             tcErr.style.display = "none";
+            InputIsClean.push(true); 
          }
        
           if(pCOde.value === '' || pCOde.value == null){
             pcErr.style.display = "block"; 
             pcErr.style.color = "red";
             pcErr.innerHTML = "Field can not be empty";
+            InputIsClean.push(false);
+            
         }
         else{
             pcErr.style.display = "none";
+            InputIsClean.push(true);
          }
        
        
       }
 
-      function InputHasNumbers(){
+      let InputHasNumbers = ()=>{
 
         fNameHasNumbers = hasNumbers(fName.value);
         lNameHasNumbers = hasNumbers(lName.value);
@@ -89,14 +111,25 @@ const fName = document.getElementById("Fname");
          fNameErr.style.display = "block";
          fNameErr.style.color = "red";
          fNameErr.innerHTML = "First name can not contain numbers";
+         InputIsClean.push(false);
+       
          }
+         else{
+          InputIsClean.push(true);
+         }
+   
     
 
          if(lNameHasNumbers){
           lNameErr.style.display = "block";
           lNameErr.style.color = "red";
           lNameErr.innerHTML = "last name can not contain numbers";
+          InputIsClean.push(false);
          }
+         else{
+          InputIsClean.push(true);
+         }
+      
          
 
       }
@@ -110,17 +143,44 @@ if(!emailVal){
         eMailErr.style.display = "block";
         eMailErr.style.color ="red";
         eMailErr.innerHTML =  "Please enter a valid email";
+        InputIsClean.push(false);
     }
     else{
         eMailErr.style.display = "none";
+        InputIsClean.push(true);
     }
+}
+
+function BookingReceived(){
+
+  bookingRM.innerHTML = "Hi "+fName.value+" thank you for booking the "+pSelect.value+" your booking request has been sent to "+eMail.value+" please check your mail for next steps of the procces";
+  bKF.style.display = "none";
+  bookingR.style.display = "block"
+  bKF.style.color = "red";
 }
       
 addForm.addEventListener('submit',function(e){
-    e.preventDefault();
-    InputHasValue();
-    InputHasNumbers();
-    isEmailValid();
+  InputHasValue();
+  InputHasNumbers();
+  isEmailValid();
+  inputNotClean = false;
+
+  for(let input of InputIsClean ){
+    console.log(input);
+    if(input == false){
+      console.log("Input is not clean");
+      inputNotClean = true;
+    }
+
+  }
+
+  InputIsClean.length = 0;
+  if(inputNotClean){e.preventDefault();}
+if(!inputNotClean){
+  console.log("Booking Received");
+  BookingReceived();
+}
+e.preventDefault();
 });
  
 
