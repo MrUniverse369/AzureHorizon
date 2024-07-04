@@ -10,25 +10,24 @@ const fName = document.getElementById("Fname");
     const pNum = document.getElementById("Pnum");
     const pSelect = document.getElementById("pSelect");
   
-    const fNameErr = document.querySelector(".FnameErr");
-    const lNameErr = document.querySelector(".LnameErr");
-    const bAddErr = document.querySelector(".BAddErr");
-    const tcErr = document.querySelector(".TCErr");
-    const pcErr = document.querySelector(".PCErr");
-    const eMailErr = document.querySelector(".eMailErr");
+  
     
     const bookingR = document.querySelector(".BookingReceived");
     const bookingRM = document.querySelector(".BookingReceivedM");
     const bKF = document.querySelector(".BKF");
     bookingR.style.display = "none";
 
+$(".BookingReceived").css("display","none");
+$(".BookingReceivedM");
+$(".BKF");
 
-    fNameErr.style.display = "none";
-    lNameErr.style.display = "none";
-    bAddErr.style.display = "none";
-    tcErr.style.display = "none";
-    pcErr.style.display = "none";
-    eMailErr.style.display = "none";
+    $(".FnameErr").css("display","none");
+    $(".LnameErr").css("display","none");
+    $(".eMailErr").css("display","none");
+    $(".BAddErr").css("display","none");
+    $(".TCErr").css("display","none");
+    $(".PCErr").css("display","none");
+
 let InputIsClean = [];
 let InputIsCleanvar = true;
 let inputNotClean = false;
@@ -39,63 +38,64 @@ let inputNotClean = false;
 
       function InputHasValue(){
         if(fName.value === '' || fName.value == null){
-            fNameErr.style.display = "block"; 
-            fNameErr.style.color = "red";
-            fNameErr.innerHTML = "Field can not be empty";
+            $(".FnameErr").css("display","block"); 
+            $(".FnameErr").css("color","red");
+            $(".FnameErr").text("Field can not be empty");
             InputIsClean.push(false);
           
            }
            else{
-            fNameErr.style.display = "none";
+            $(".FnameErr").css("display","none"); 
             InputIsClean.push(true);
          }
 
 
           if(lName.value === '' || lName.value == null){
-            lNameErr.style.display = "block";
-            lNameErr.style.color = "red";
-            lNameErr.innerHTML = "Field can not be empty";
+            $(".LnameErr").css("display","block"); 
+            $(".LnameErr").css("color","red");
+            $(".LnameErr").text("Field can not be empty");
             InputIsClean.push(false);
     
           }
           else{
-            lNameErr.style.display = "none";
+            $(".LnameErr").css("display","none");
             InputIsClean.push(true);
          }
 
           if(Badd.value === '' || Badd.value == null){
-            bAddErr.style.display = "block";
-            bAddErr.style.color = "red";
-            bAddErr.innerHTML = "Field can not be empty";
+            $(".BAddErr").css("display","block");
+            $(".BAddErr").css("color","red");
+            $(".BAddErr").text("Field can not be empty");
             InputIsClean.push(false);
            
           }
-          else{
-            bAddErr.style.display = "none";
+          else
+          { 
+            $(".BAddErr").css("display","none");
             InputIsClean.push(true);
-         }
+          }
 
           if(townCity.value === '' || townCity.value == null){
-          tcErr.style.display = "block";
-          tcErr.style.color = "red";
-          tcErr.innerHTML = "Field can not be empty";
+          $(".TCErr").css("display","block");
+          $(".TCErr").css("color","red");
+          $(".TCErr").text("Field can not be empty")
           InputIsClean.push(false);
           
           }
           else{
-            tcErr.style.display = "none";
+            $(".TCErr").css("display","none");
             InputIsClean.push(true); 
          }
        
           if(pCOde.value === '' || pCOde.value == null){
-            pcErr.style.display = "block"; 
-            pcErr.style.color = "red";
-            pcErr.innerHTML = "Field can not be empty";
+            $(".PCErr").css("display","block");
+            $(".PCErr").css("color","red");
+            $(".PCErr").text("Field can not be empty");
             InputIsClean.push(false);
             
         }
         else{
-            pcErr.style.display = "none";
+          $(".PCErr").css("display","none");
             InputIsClean.push(true);
          }
        
@@ -108,56 +108,49 @@ let inputNotClean = false;
         lNameHasNumbers = hasNumbers(lName.value);
 
         if(fNameHasNumbers){ 
-         fNameErr.style.display = "block";
-         fNameErr.style.color = "red";
-         fNameErr.innerHTML = "First name can not contain numbers";
+          $(".FnameErr").css("display","block"); 
+          $(".FnameErr").css("color","red");
+          $(".FnameErr").text("First name can not contain numbers"); 
          InputIsClean.push(false);
        
          }
          else{
           InputIsClean.push(true);
          }
-   
-    
-
          if(lNameHasNumbers){
-          lNameErr.style.display = "block";
-          lNameErr.style.color = "red";
-          lNameErr.innerHTML = "last name can not contain numbers";
+          $(".LnameErr").css("display","block"); 
+          $(".LnameErr").css("color","red");
+          $(".LnameErr").text("First name can not contain numbers");
           InputIsClean.push(false);
          }
          else{
           InputIsClean.push(true);
          }
-      
-         
-
       }
-
      function isEmailValid(){
         const emailVal = eMail.value.match(
             /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
           );
 if(!emailVal){
 
-        eMailErr.style.display = "block";
-        eMailErr.style.color ="red";
-        eMailErr.innerHTML =  "Please enter a valid email";
+      $(".eMailErr").css("display","block");
+      $(".eMailErr").css("color","red");
+      $(".eMailErr").text("Please enter a valid email address");
         InputIsClean.push(false);
     }
     else{
-        eMailErr.style.display = "none";
+      $(".eMailErr").css("display","none");
         InputIsClean.push(true);
     }
 }
 
 function BookingReceived(){
-
-  bookingRM.innerHTML = "Hi "+fName.value+" thank you for booking the "+pSelect.value+" your booking request has been sent to "+eMail.value+" please check your mail for next steps of the procces";
-  bKF.style.display = "none";
-  bookingR.style.display = "block"
-  bKF.style.color = "red";
-}
+$(".BookingReceivedM").text("Hi "+fName.value
++" thank you for booking the "+pSelect.value+" your booking request has been sent to "
++eMail.value+" please check your mail for next steps of the procces");
+$(".BKF").css("display","none");
+$(".BookingReceived").css("display","block");
+ }
       
 addForm.addEventListener('submit',function(e){
   InputHasValue();
